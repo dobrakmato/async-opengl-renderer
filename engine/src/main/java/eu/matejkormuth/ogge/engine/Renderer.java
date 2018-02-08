@@ -47,7 +47,7 @@ public final class Renderer {
         String contentRoot = "C:\\Users\\Matej\\IdeaProjects\\ogge\\engine\\src\\main\\resources";
 
         // Set GL state defaults.
-        GL.faceCullingCCW();
+        // GL.faceCullingCCW();
         GL.clearColor(0.3f, 0.5f, 1);
 
         // Create objects.
@@ -66,8 +66,8 @@ public final class Renderer {
             //  [ ------ vec3 ----- ] [ align ]
             buff.put(0).put(1).put(0).put(0);
             buff.put(1).put(1).put(0).put(0);
-            buff.put(0).put(0).put(0).put(0);
             buff.put(1).put(0).put(0).put(0);
+            buff.put(0).put(0).put(0).put(0);
 
             buff.flip();
             vbo.uploadSubData(0L, buff);
